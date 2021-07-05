@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --blue:rgb(0, 196, 183);
+}
+body{
+    background-color: var(--blue);
+    
+}
+.main{
+   margin-top: 4rem;
+   margin-left: 20rem;
+    height: 500px;
+    width: 800px;
+    background-color: rgb(56, 54, 56);
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 9rem;
+    padding-left: 2rem;
+    position: absolute;
+    
+}
+.container .left{
+    color: var(--blue);
+    border-left: 2px solid;
+    padding-right: 8rem;
+    padding-left: 2rem;   
+}
+.left h1{
+    line-height: 4rem;
+    font-size: 44px;
+    transition: 2s ease;
+}
+.container .right input{
+    background-color: transparent;
+    padding: 0.5rem;
+}
+::placeholder{
+  color: rgb(218, 208, 208); 
+  font-size:18px;
+  font-weight:normal;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition: 2s ease;
+  
+}
+.right{ 
+    position:relative; 
+    margin-bottom:45px; 
+    font-weight: 700;
+  }
+input{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+input:focus { outline:none; }
+
+a{
+    text-decoration: none;
+    color: var(--blue);
+    padding-right: 9rem;
+    transition: 2s ease;
+    
+}
+
+/*
+.container{
+    position: relative;
+    animation: container 2s ease .5s 1 normal;
+}
+@keyframes container {
+    from {left: 0px;}
+  to {left: 50px;}
+}
+/*
